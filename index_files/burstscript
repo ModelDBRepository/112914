@@ -1,0 +1,38 @@
+//***********************************************************************************************
+ 
+ function makeTitle(title) {
+ 
+  string = "<table WIDTH=580><TR><TD class=title WIDTH=100% HEIGHT=32 align=center colspan=6>" + title + "<\/TD><\/TR>";
+
+  string2 = "<TR><td class=TCALC>" +
+            "<a class=TMENU href=\"http://web.njit.edu/~matveev/\" target=_top>&nbsp;&nbsp;Matveev&nbsp;&nbsp;<\/a><\/td> ";
+
+  string3 = "<td class=TCALC>" +
+            "<a class=TMENU href=\"http://m.njit.edu/~bose/\" target=_top>&nbsp;&nbsp;Bose&nbsp;&nbsp;<\/a><\/td> " +
+            "<td class=TCALC>" +
+            "<a class=TMENU href=\"http://stg.rutgers.edu/farzan/index.htm\" target=_top>&nbsp;&nbsp;Nadim&nbsp;&nbsp;<\/a><\/td> " +
+            "<td class=TMENU>" +
+            "<a class=TMENU href=\"http://math.njit.edu\" target=_top>&nbsp;&nbsp;Math Sci&nbsp;&nbsp;<\/a><\/td> " +
+            "<td class=TNJIT>" +
+            "<a class=TMENU href=\"http://www.njit.edu/\" target=_top>&nbsp;&nbsp;<b>NJIT</b>&nbsp;&nbsp;<\/a><\/td> " +
+            "<td class=TMENU>" +
+            "<a class=TMENU href=\"http://newarkbiosci.rutgers.edu/\" target=_top>&nbsp;Bio Sci&nbsp;<\/a><\/td> " +
+            "<\/tr><\/table><br>"
+
+  document.write(string);
+  document.write(string2);
+  document.write(string3);
+
+}
+
+  homerImage = new Image();
+  homerImage.src = "images/homer.jpg";
+
+  myImage = new Image();
+  myImage.src = "images/me2.jpg" // "images/small_photo.jpg";
+
+  function homerHead() { document.head.src = homerImage.src; }
+
+  function myHead() { document.head.src = myImage.src; }
+
+//***********************************************************************************************

@@ -1,0 +1,117 @@
+<html><head>
+  <script language="JavaScript" type="text/javascript" src="index_files/burstscript"></script>
+ 
+  <meta name="Author" content="Victor Matveev">
+  <meta name="description" content="Calcium Calculator example script files">
+  <meta name="Keywords" content="Calcium Calculator, scripts, CalC, download, calcium diffusion, calcium buffering">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><title>MATLAB code for manuscript "Capturing the bursting dynamics..." (2007) Matveev, Bose, Nadim</title> 
+
+
+
+<!-- base href="http://web.njit.edu/~matveev/Burst/" --><!-- ===============================================================================
+                               B  O  D  Y
+=============================================================================== --></head>
+
+
+<body>
+
+<script language="JavaScript" type="text/javascript">
+makeTitle("MATLAB code for multistable anti-phase bursting");
+</script><table width="580"><tbody><tr><td class="title" colspan="6" align="center" height="32" width="100%">MATLAB code for multistable anti-phase bursting</td></tr><tr><td class="TCALC"><a class="TMENU" href="http://web.njit.edu/%7Ematveev/" target="_top">&nbsp;&nbsp;Matveev&nbsp;&nbsp;</a></td> <td class="TCALC"><a class="TMENU" href="http://m.njit.edu/%7Ebose/" target="_top">&nbsp;&nbsp;Bose&nbsp;&nbsp;</a></td> <td class="TCALC"><a class="TMENU" href="http://stg.rutgers.edu/farzan/index.htm" target="_top">&nbsp;&nbsp;Nadim&nbsp;&nbsp;</a></td> <td class="TMENU"><a class="TMENU" href="http://math.njit.edu/" target="_top">&nbsp;&nbsp;Math Sci&nbsp;&nbsp;</a></td> <td class="TNJIT"><a class="TMENU" href="http://www.njit.edu/" target="_top">&nbsp;&nbsp;<b>NJIT</b>&nbsp;&nbsp;</a></td> <td class="TMENU"><a class="TMENU" href="http://newarkbiosci.rutgers.edu/" target="_top">&nbsp;Bio Sci&nbsp;</a></td> </tr></tbody></table><br>
+<br>
+
+
+<!-- b><font color=maroon>[[ Under Construction ]]</font></b><br><br -->
+
+<!--font color=maroon>Under construction</font><br><br><br-->
+
+The MATLAB scripts posted below reproduce the simulation results corresponding
+to Figs. 1, 10 and 11 of the manuscript:<br><br>
+
+<table border="1" cellpadding="3"><tbody><tr><td class="COLOR" align="center">
+Victor Matveev, Amitabha Bose, Farzan Nadim<br>
+<b>Capturing the bursting dynamics of a two-cell inhibitory network using a
+one-dimensional map</b> (2007)<br>
+Journal of Computational Neuroscience, <b>23</b>: 169.
+<a href="http://www.springerlink.com/content/t4v879k50364471u/">[ Full Text ]</a>
+<!-- a href="http://jn.physiology.org/cgi/reprint/00101.2006v1">[ PDF ]</a><br -->
+</td></tr></tbody></table>
+<br>
+
+Please place all files in the same directory before running the main simulation script <b>MultiMovie.m</b>
+
+<br><br>
+<hr>
+<br>
+
+<!-- ===============================================================================
+                          MAIN  TABLE
+=============================================================================== -->
+
+<table cellpadding="2" width="600">
+
+<tbody><tr><td valign="top">
+<font color="red">&#9830;</font>&nbsp;<a href="http://web.njit.edu/%7Ematveev/Burst/MultiMovie.m" class="SCRIPT">MultiMovie.m</a>
+</td><td>
+This m-script illustrates the geometry of bursting corresponding to Figs. 1, 10 and 11, in the form of a movie, showing 
+both the time course and the phase-plane dynamics of the model. <!-- V<sub>1,2</sub> and h<sub>1,2</sub>. -->
+The program prompts the user to select the number of spikes per burst. Only the initial condition
+is affected by user input; all parameters are set to fixed values listed in Appendix A1.
+<br><br>
+</td></tr>
+
+<tr><td valign="top">
+<font color="red">&#9830;</font>&nbsp;<a href="http://web.njit.edu/%7Ematveev/Burst/burstODE.m" class="SCRIPT">burstODE.m</a>
+</td><td>
+This ODE m-file implements the model equations (Eqs. 6). The file follows the standard format used by the built-in
+MATLAB ode integrators.
+<br><br>
+</td></tr>
+
+<tr><td valign="top">
+<font color="red">&#9830;</font>&nbsp;<a href="http://web.njit.edu/%7Ematveev/Burst/Vnullcline.m" class="SCRIPT">Vnullcline.m</a>
+</td><td> Calculates the V-nullcline; used by the main MultiMovie script above.
+<br><br>
+</td></tr>
+
+<!-- tr><td valign=top>
+<font color=red>&diams;</font>&nbsp;<a href="odearguments.m" class=SCRIPT>odearguments.m</a>
+</td><td>
+A standard MATLAB routine for setting ode integration options. Not critical for current code.
+<br><br>
+</td></tr -->
+
+</tbody></table>
+
+<hr>
+
+Supported in part by the <b>National Science Foundation</b> grants 
+<b>DMS 0417416</b> (Victor Matveev), <b>DMS 0615168</b> (Amitabha Bose) <br>
+and the <b>National Institutes of Health</b> grant <b>MH-60605</b> (Farzan Nadim).
+<br><br>
+
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+
+<!-- table cellpadding=3><tr><td>
+<a href="../scripts.html">[ Back to Scripts ]</a>
+</td></tr></table -->
+<hr>
+<address>
+<small>
+<a href="http://web.njit.edu/%7Ematveev" target="_top">Victor Matveev</a>
+</small>
+</address>
+<small>
+This server is running a 
+<a href="http://www.redhat.com/" target="_top">Redhat</a> distribution of 
+<a href="http://www.linux.org/" target="_top">Linux</a>.
+<br>
+<!-- Created: Sun Apr 12 18:25:17 EDT 1998 -->
+<!-- hhmts start -->
+Last modified: Feb 4, 2007
+<!-- hhmts end -->
+</small>
+
+</body></html>
