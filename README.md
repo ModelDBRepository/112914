@@ -11,15 +11,13 @@ Please place all files in the same directory before running the main simulation 
 
 ---
 
-|  |  |
-|---|---|
-| ♦ [MultiMovie.m](http://web.njit.edu/%7Ematveev/Burst/MultiMovie.m) | This m-script illustrates the geometry of bursting corresponding to Figs. 1, 10 and 11, in the form of a movie, showing both the time course and the phase-plane dynamics of the model. The program prompts the user to select the number of spikes per burst. Only the initial condition is affected by user input; all parameters are set to fixed values listed in Appendix A1.  |
-| ♦ [burstODE.m](http://web.njit.edu/%7Ematveev/Burst/burstODE.m) | This ODE m-file implements the model equations (Eqs. 6). The file follows the standard format used by the built-in MATLAB ode integrators. |
-| ♦ [Vnullcline.m](http://web.njit.edu/%7Ematveev/Burst/Vnullcline.m) | Calculates the V-nullcline; used by the main MultiMovie script above. |
+♦ [MultiMovie.m](http://web.njit.edu/%7Ematveev/Burst/MultiMovie.m): This m-script illustrates the geometry of bursting corresponding to Figs. 1, 10 and 11, in the form of a movie, showing both the time course and the phase-plane dynamics of the model. The program prompts the user to select the number of spikes per burst. Only the initial condition is affected by user input; all parameters are set to fixed values listed in Appendix A1.  
+♦ [burstODE.m](http://web.njit.edu/%7Ematveev/Burst/burstODE.m): This ODE m-file implements the model equations (Eqs. 6). The file follows the standard format used by the built-in MATLAB ode integrators.  
+♦ [Vnullcline.m](http://web.njit.edu/%7Ematveev/Burst/Vnullcline.m): Calculates the V-nullcline; used by the main MultiMovie script above.
 
 ---
 
-Supported in part by the **National Science Foundation** grants
+Supported in part by the **National Science Foundation** grants  
 **DMS 0417416** (Victor Matveev), **DMS 0615168** (Amitabha Bose)
 and the **National Institutes of Health** grant **MH-60605** (Farzan Nadim).
 
@@ -32,8 +30,7 @@ This server is running a
 [Redhat](http://www.redhat.com/) distribution of
 [Linux](http://www.linux.org/).
 
+## Changelog
 Last modified: Feb 4, 2007
 
----
-
-2025-06-02: Standardized to Markdown.
+Standardized to Markdown: June 2, 2025
